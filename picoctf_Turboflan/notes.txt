@@ -1,0 +1,54 @@
+d8> %DebugPrint(o1)
+DebugPrint: 0x11eb08084d7d: [JS_OBJECT_TYPE]
+ - map: 0x11eb08245931 <Map(HOLEY_ELEMENTS)> [FastProperties]
+ - prototype: 0x11eb08202eb9 <Object map = 0x11eb082421b9>
+ - elements: 0x11eb0804222d <FixedArray[0]> [HOLEY_ELEMENTS]
+ - properties: 0x11eb0804222d <FixedArray[0]>
+ - All own properties (excluding elements): {
+    0x11eb080477bd: [String] in ReadOnlySpace: #a: 42 (const data field 0), location: in-object
+    0x11eb08047859: [String] in ReadOnlySpace: #b: 43 (const data field 1), location: in-object
+ }
+0x11eb08245931: [Map]
+ - type: JS_OBJECT_TYPE
+ - instance size: 20
+ - inobject properties: 2
+ - elements kind: HOLEY_ELEMENTS
+ - unused property fields: 0
+ - enum length: invalid
+ - stable_map
+ - back pointer: 0x11eb08245909 <Map(HOLEY_ELEMENTS)>
+ - prototype_validity cell: 0x11eb08182405 <Cell value= 1>
+ - instance descriptors (own) #2: 0x11eb08084dad <DescriptorArray[2]>
+ - prototype: 0x11eb08202eb9 <Object map = 0x11eb082421b9>
+ - constructor: 0x11eb08202af1 <JSFunction Object (sfi = 0x11eb08184721)>
+ - dependent code: 0x11eb080421b9 <Other heap object (WEAK_FIXED_ARRAY_TYPE)>
+ - construction counter: 0
+
+{a: 42, b: 43}
+d8> %DebugPrint(o2)
+DebugPrint: 0x11eb080864b5: [JS_OBJECT_TYPE]
+ - map: 0x11eb08245931 <Map(HOLEY_ELEMENTS)> [FastProperties]
+ - prototype: 0x11eb08202eb9 <Object map = 0x11eb082421b9>
+ - elements: 0x11eb0804222d <FixedArray[0]> [HOLEY_ELEMENTS]
+ - properties: 0x11eb0804222d <FixedArray[0]>
+ - All own properties (excluding elements): {
+    0x11eb080477bd: [String] in ReadOnlySpace: #a: 1337 (const data field 0), location: in-object
+    0x11eb08047859: [String] in ReadOnlySpace: #b: 1338 (const data field 1), location: in-object
+ }
+0x11eb08245931: [Map]
+ - type: JS_OBJECT_TYPE
+ - instance size: 20
+ - inobject properties: 2
+ - elements kind: HOLEY_ELEMENTS
+ - unused property fields: 0
+ - enum length: 2
+ - stable_map
+ - back pointer: 0x11eb08245909 <Map(HOLEY_ELEMENTS)>
+ - prototype_validity cell: 0x11eb08182405 <Cell value= 1>
+ - instance descriptors (own) #2: 0x11eb08084dad <DescriptorArray[2]>
+ - prototype: 0x11eb08202eb9 <Object map = 0x11eb082421b9>
+ - constructor: 0x11eb08202af1 <JSFunction Object (sfi = 0x11eb08184721)>
+ - dependent code: 0x11eb080421b9 <Other heap object (WEAK_FIXED_ARRAY_TYPE)>
+ - construction counter: 0
+
+{a: 1337, b: 1338}
